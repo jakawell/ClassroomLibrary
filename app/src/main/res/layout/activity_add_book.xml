@@ -1,0 +1,158 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddBookActivity" >
+    
+    <LinearLayout 
+        android:id="@+id/add_book_attr_layout"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+	    android:paddingLeft="@dimen/activity_horizontal_margin"
+	    android:paddingRight="@dimen/activity_horizontal_margin"
+	    android:paddingTop="@dimen/activity_vertical_margin"
+	    android:orientation="vertical"
+	    android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <TextView
+	        android:id="@+id/instruct_label"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/scan_book_instruct_label" />
+	    
+	    <Button
+	        android:id="@+id/startscan_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/scan_button" />
+
+	    
+<!-- 	    <LinearLayout  -->
+<!-- 		    android:layout_width="match_parent" -->
+<!-- 		    android:layout_height="60dp" -->
+<!-- 		    android:layout_marginLeft="4dp" -->
+<!-- 		    android:layout_marginTop="10dp" -->
+<!-- 		    android:layout_marginRight="4dp" -->
+<!-- 		    android:layout_marginBottom="4dp" -->
+<!-- 		    android:orientation="horizontal" > -->
+		
+<!-- 		    <EditText -->
+<!-- 		        android:id="@+id/isbn_box" -->
+<!-- 		        android:layout_width="0dp" -->
+<!-- 		        android:layout_height="wrap_content" -->
+<!-- 		        android:layout_weight="15" -->
+<!-- 		        android:layout_gravity="bottom" -->
+<!-- 		        android:ems="10" -->
+<!-- 		        android:hint="@string/isbn_label" -->
+<!-- 	        	 > -->
+		        
+<!-- 		        <requestFocus /> -->
+<!-- 		    </EditText> -->
+		
+<!-- 		    <TextView -->
+<!-- 		        android:id="@+id/isbn_required" -->
+<!-- 		        android:layout_width="0dp" -->
+<!-- 		        android:layout_height="match_parent" -->
+<!-- 		        android:layout_weight="1" -->
+<!-- 		        android:paddingTop="10dp" -->
+<!-- 		        android:text="@string/required_symbol" -->
+<!-- 		        android:textColor="#ff0011" -->
+<!-- 		        android:textAppearance="?android:attr/textAppearanceLarge" /> -->
+		    
+<!-- 		    <RelativeLayout  -->
+<!-- 		        android:layout_width="0dp" -->
+<!-- 		        android:layout_height="60dp" -->
+<!-- 		        android:layout_weight="3" -->
+<!-- 		        android:layout_gravity="bottom" > -->
+		
+<!-- 		        <ProgressBar -->
+<!-- 		            android:id="@+id/isbn_progress" -->
+<!-- 		            style="?android:attr/progressBarStyleSmall" -->
+<!-- 		            android:layout_width="wrap_content" -->
+<!-- 		            android:layout_height="wrap_content" -->
+<!-- 		            android:layout_centerHorizontal="true" -->
+<!-- 		            android:layout_centerVertical="true" -->
+<!-- 		            android:visibility="invisible" /> -->
+		        
+<!-- 		    </RelativeLayout> -->
+<!-- 		</LinearLayout> -->
+	    
+<!-- 	    <LinearLayout  -->
+<!-- 	        android:layout_width="match_parent" -->
+<!-- 		    android:layout_height="wrap_content" -->
+<!-- 		    android:layout_marginLeft="4dp" -->
+<!-- 		    android:layout_marginTop="10dp" -->
+<!-- 		    android:layout_marginRight="4dp" -->
+<!-- 		    android:layout_marginBottom="4dp" -->
+<!-- 		    android:orientation="horizontal" > -->
+		
+<!-- 		    <EditText -->
+<!-- 		        android:id="@+id/title_box" -->
+<!-- 		        android:layout_width="0dp" -->
+<!-- 		        android:layout_height="wrap_content" -->
+<!-- 		        android:layout_weight="15" -->
+<!-- 		        android:layout_gravity="bottom" -->
+<!-- 		        android:ems="10" -->
+<!-- 	        	android:hint="@string/title_label" -->
+<!-- 	        	 > -->
+<!-- 		    </EditText> -->
+		
+<!-- 		    <TextView -->
+<!-- 		        android:id="@+id/title_required" -->
+<!-- 		        android:layout_width="0dp" -->
+<!-- 		        android:layout_height="match_parent" -->
+<!-- 		        android:layout_weight="1" -->
+<!-- 		        android:paddingTop="10dp" -->
+<!-- 		        android:text="@string/required_symbol" -->
+<!-- 		        android:textColor="#ff0011" -->
+<!-- 		        android:textAppearance="?android:attr/textAppearanceLarge" /> -->
+		    
+<!-- 		    <RelativeLayout  -->
+<!-- 		        android:layout_width="0dp" -->
+<!-- 		        android:layout_height="60dp" -->
+<!-- 		        android:layout_weight="3" -->
+<!-- 		        android:layout_gravity="bottom" > -->
+		        
+<!-- 		        <ImageView -->
+<!-- 			        android:id="@+id/title_grey_cloud" -->
+<!-- 			        android:layout_width="60dp" -->
+<!-- 		        	android:layout_height="60dp" -->
+<!-- 			        android:layout_centerInParent="true" -->
+<!-- 			        android:src="@drawable/ic_cloud_grey" -->
+<!-- 			        android:contentDescription="@string/grey_cloud_img_desc" /> -->
+		        
+<!-- 		        <ImageView -->
+<!-- 			        android:id="@+id/title_green_cloud" -->
+<!-- 			        android:layout_width="60dp" -->
+<!-- 		        	android:layout_height="60dp" -->
+<!-- 			        android:layout_centerInParent="true" -->
+<!-- 			        android:src="@drawable/ic_cloud_green" -->
+<!-- 			        android:contentDescription="@string/green_cloud_img_desc" -->
+<!-- 			        android:visibility="invisible" /> -->
+		        
+<!-- 		        <ImageView -->
+<!-- 			        android:id="@+id/title_yellow_cloud" -->
+<!-- 			        android:layout_width="60dp" -->
+<!-- 		        	android:layout_height="60dp" -->
+<!-- 			        android:layout_centerInParent="true" -->
+<!-- 			        android:src="@drawable/ic_cloud_yellow" -->
+<!-- 			        android:contentDescription="@string/yellow_cloud_img_desc" -->
+<!-- 			        android:visibility="invisible" /> -->
+		
+<!-- 		        <ProgressBar -->
+<!-- 		            android:id="@+id/title_cloud_progress" -->
+<!-- 		            style="?android:attr/progressBarStyleSmall" -->
+<!-- 		            android:layout_width="wrap_content" -->
+<!-- 		            android:layout_height="wrap_content" -->
+<!-- 		            android:paddingLeft="5dp" -->
+<!-- 		            android:paddingTop="5dp" -->
+<!-- 		            android:layout_centerHorizontal="true" -->
+<!-- 		            android:layout_centerVertical="true" -->
+<!-- 		            android:visibility="invisible" /> -->
+		        
+<!-- 		    </RelativeLayout> -->
+<!-- 		</LinearLayout> -->
+        
+    </LinearLayout>
+
+</ScrollView>

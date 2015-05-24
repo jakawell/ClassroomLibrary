@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.worldlightapps.classroomlibrary"
+    android:versionCode="2"
+    android:versionName="0.02-cloudy" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.worldlightapps.classroomlibrary.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.worldlightapps.classroomlibrary.ScannerActivity"
+            android:label="@string/title_activity_scanner" >
+        </activity>
+        <activity
+            android:name="com.worldlightapps.classroomlibrary.AddBookActivity"
+            android:label="@string/title_activity_add_book" >
+        </activity>
+        <activity
+            android:name="com.worldlightapps.classroomlibrary.ViewBooksActivity"
+            android:label="@string/title_activity_view_books" >
+        </activity>
+        <activity
+            android:name="com.worldlightapps.classroomlibrary.CheckOutActivity"
+            android:label="@string/title_activity_check_out" >
+        </activity>
+        <activity
+            android:name="com.worldlightapps.classroomlibrary.AddClientActivity"
+            android:label="@string/title_activity_add_client" >
+        </activity>
+        <activity
+            android:name="com.worldlightapps.classroomlibrary.CheckInActivity"
+            android:label="@string/title_activity_check_in" >
+        </activity>
+        <activity
+            android:name="com.worldlightapps.classroomlibrary.CreateAccountActivity"
+            android:label="@string/title_activity_create_account" >
+        </activity>
+        <activity
+            android:name="com.worldlightapps.classroomlibrary.LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+    </application>
+
+</manifest>

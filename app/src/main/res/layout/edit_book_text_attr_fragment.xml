@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="4dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="4dp"
+    android:layout_marginBottom="4dp"
+    android:orientation="horizontal" >
+
+    <EditText
+        android:id="@+id/add_attr_edittext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="15"
+        android:layout_gravity="bottom"
+        android:ems="10"
+        android:inputType="textCapSentences" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/add_attr_required"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingTop="10dp"
+        android:text="@string/required_symbol"
+        android:textColor="#ff0011"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <RelativeLayout 
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_weight="3"
+        android:layout_gravity="bottom" >
+        
+        <ImageView
+	        android:id="@+id/grey_cloud"
+	        android:layout_width="60dp"
+        	android:layout_height="60dp"
+	        android:layout_centerInParent="true"
+	        android:src="@drawable/ic_cloud_grey"
+	        android:contentDescription="@string/grey_cloud_img_desc" />
+        
+        <ImageView
+	        android:id="@+id/green_cloud"
+	        android:layout_width="60dp"
+        	android:layout_height="60dp"
+	        android:layout_centerInParent="true"
+	        android:src="@drawable/ic_cloud_green"
+	        android:contentDescription="@string/green_cloud_img_desc"
+	        android:visibility="invisible" />
+        
+        <ImageView
+	        android:id="@+id/yellow_cloud"
+	        android:layout_width="60dp"
+        	android:layout_height="60dp"
+	        android:layout_centerInParent="true"
+	        android:src="@drawable/ic_cloud_yellow"
+	        android:contentDescription="@string/yellow_cloud_img_desc"
+	        android:visibility="invisible" />
+
+        <ProgressBar
+            android:id="@+id/cloud_progress"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="invisible" />
+        
+    </RelativeLayout>
+</LinearLayout>

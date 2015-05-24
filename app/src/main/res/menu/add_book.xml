@@ -1,0 +1,4 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/menu_add_attribute" android:title="@string/add_attribute_lable" android:icon="@drawable/ic_menu_add" android:orderInCategory="101" android:showAsAction="always"></item>
+	<item android:id="@+id/menu_save" android:title="@string/save_label" android:icon="@drawable/ic_menu_save" android:orderInCategory="102" android:showAsAction="always"></item>
+</menu>
